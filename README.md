@@ -18,7 +18,7 @@ Count infinite stream of data with sublinear space and constant time, but subopt
 ## Consistent Hashing
 Unlike simple hashing (MOD with MD5 or murmur3) where the number of buckets is fixed, consistent hashing allows the number of buckets to vary at runtime.
 
- - buckets are organised in a ring e.g. range(1, 2^32)
+ - buckets are organised in a ring e.g. SHA-1 (0, 2^160-1)
  - object keys as well as bucket IDs (e.g. server IP address) are used to calculate a hash value
  - instead of calculating the hash that maps directly to a bucket, a bucket is responsible for hash values in a range that begins from itself and the previous bucket
  - virtual nodes are used to minimise hot spots; the idea is to reduce the sizes of ranges by assigning more than one node to a bucket
