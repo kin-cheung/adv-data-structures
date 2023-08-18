@@ -8,6 +8,9 @@
  - `this` is `undefined` in basic functions. e.g. `hello()`
 ### 3. `object.call()` and `object.apply()`
  - are used to apply an object to `this` when calling a function that is in another object and has reference to `this` inside it 
+### 4. `forEach()` for `Map` and `Set`
+ - `map.forEach(function (value, key, map) {})`
+
 
 ## Working with vscode
 
