@@ -1,9 +1,19 @@
-## working with vscode
+## Working with vscode
 
-### settings
+### Settings
+ - "Default Formatter"
  - Format on save
  - Prettier: Single quote
  - "Check JS"
 
-### extensions
+settings.json
+```
+  "editor.formatOnSave": true,
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true
+  "js/ts.implicitProjectConfig.checkJs": true,
+```
+
+### Extensions
  - prettier
+ - 
