@@ -9,7 +9,7 @@
 ### 3. `object.call()` and `object.apply()`
  - are used to apply an object to `this` when calling a function that is in another object and has reference to `this` inside it 
 ### 4. `forEach()` for `Array`, `Map` and `Set`
- - 'array.forEach(function (index, value, array) {})'
+ - `array.forEach(function (index, value, array) {})`
  - `map.forEach(function (value, key, map) {})`
 
 
