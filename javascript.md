@@ -8,8 +8,11 @@
  - `this` is `undefined` in basic functions. e.g. `hello()`
 ### 3. `object.call()` and `object.apply()`
  - are used to apply an object to `this` when calling a function that is in another object and has reference to `this` inside it 
-### 4. `forEach()` for `Array`, `Map` and `Set`
- - `array.forEach(function (index, value, array) {})`
+### 4. `entries()` vs `forEach()` in `Array`, `Map` and `Set`
+ - `const [index, value] of array.entries`
+ - `const [key, value] of map.entries` \
+--- BUT ---
+ - `array.forEach(function (value, index, array) {})`
  - `map.forEach(function (value, key, map) {})`
 
 
