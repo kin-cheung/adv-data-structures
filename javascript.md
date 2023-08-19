@@ -1,4 +1,4 @@
-## Pitfalls
+## Keys
 ### Hoisting and TDS (temporal dead space)
  - `var` variables are initialised with a value in TDS
  - `let` and `const` are technically hoisted as well but they are uninitialised in TDS and therefore cannot be used out of scope or out of order
