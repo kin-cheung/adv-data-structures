@@ -1,19 +1,24 @@
 ## Pitfalls
-### 1. Hoisting and TDS (temporal dead space)
+### Hoisting and TDS (temporal dead space)
  - `var` variables are initialised with a value in TDS
  - `let` and `const` are technically hoisted as well but they are uninitialised in TDS and therefore cannot be used out of scope or out of order
-### 2. `this`
+### `this`
  - `this` is dynamcially assigned and it depends on "where" the method is called
  - avoid using `this` in `=>` functions inside an object or class
  - `this` is `undefined` in basic functions. e.g. `hello()`
-### 3. `object.call()` and `object.apply()`
+### `object.call()` and `object.apply()`
  - are used to apply an object to `this` when calling a function that is in another object and has reference to `this` inside it 
-### 4. `entries()` vs `forEach()` in `Array`, `Map` and `Set`
+### `entries()` vs `forEach()` in `Array`, `Map` and `Set`
  - `const [index, value] of array.entries`
  - `const [key, value] of map.entries` \
 --- BUT ---
  - `array.forEach(function (value, index, array) {})`
  - `map.forEach(function (value, key, map) {})`
+### Promise Combinators
+ -  `await Promise.all([])` - returns after all have returned
+ -  `await Promise.race([])` - returns as soon as one of them has returned
+ -  `await Promise.allSettled([])` - returns results of all settled promises, but rejected promises are ignored
+ -  `await Promise.any([])` - similar to `Promise.race([])` but rejected promises are ignored
 ### Others
  - Private class properties and function using `#`
  - Callback hell -> Promise hell -> async/await
