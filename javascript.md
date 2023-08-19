@@ -22,7 +22,7 @@
 ### ES2022 features
  - `.at(-1)` to return the last item
  - top level `await` can be used in modules but it will block the entire module and the importing module
-### The module pattern (Clousure)
+### The module pattern (Closure)
  ```javascript
  const aModule = (function() {
   function function1() {}
