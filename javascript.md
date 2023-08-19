@@ -14,6 +14,11 @@
 --- BUT ---
  - `array.forEach(function (value, index, array) {})`
  - `map.forEach(function (value, key, map) {})`
+### Others
+ - Private class properties and function using `#`
+ - Callback hell -> Promise hell -> async/await
+ - Call stack + Call back queue + Microtask queue (Promise callbacks) + Event loop
+  -   Microtask queue takes priority
 
 
 ## Working with vscode
