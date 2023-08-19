@@ -19,6 +19,22 @@
  -  `await Promise.race([])` - returns as soon as one of them has returned
  -  `await Promise.allSettled([])` - returns results of all settled promises, but rejected promises are ignored
  -  `await Promise.any([])` - similar to `Promise.race([])` but rejected promises are ignored
+### ES2022 features
+ - `.at(-1)` to return the last item
+ - top level `await` can be used in modules but it will block the entire module and the importing module
+### The module pattern
+ ```javascript
+ const aModule = (function() {
+  function function1() {}
+  function function2() {}
+  function privateFunction1() {}
+  return (
+   function1,
+   function2
+  )
+ })();
+ aModule.function1();
+ ```
 ### Others
  - Private class properties and function using `#`
  - Callback hell -> Promise hell -> async/await
