@@ -42,7 +42,7 @@
   -   Microtask queue takes priority
  - Babel does not polyfill anymore and need to rely on `core-js/stable` (the rest) and `regenerator-runtime/runtime` (async functions)
 
-### Clean code
+## Clean code
  - Don't use `var`
  - Use strong type checks (=== and !==)
  - Use ES6 classes
