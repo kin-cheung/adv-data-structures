@@ -1,5 +1,9 @@
 # Notes
 
+## System Design
 - [Advanced Data Structures and Alogoritms](/adv-data-structures-and-algo.md) 
-- [Javascript](/javascript.md)
 - [System Design](/system-design.md)
+
+## Programming lanaguages (and runtime :wink:)
+- [Javascript](/javascript.md)
+- [NodeJS](/nodejs.md)
