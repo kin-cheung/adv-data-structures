@@ -40,7 +40,17 @@
  - Callback hell -> Promise hell -> async/await
  - Call stack + Call back queue + Microtask queue (Promise callbacks) + Event loop
   -   Microtask queue takes priority
+ - Babel does not polyfill anymore and need to rely on `core-js/stable` (the rest) and `regenerator-runtime/runtime` (async functions)
 
+### Clean code
+ - Don't use `var`
+ - Use strong type checks (=== and !==)
+ - Use ES6 classes
+ - Do **not** use arrow functions as methods in regular objects
+ - Avoid callback-based asynchronous APIs
+ - Use `Array` functions instead of `for` loops
+ - Use `async/await` and avoid callback and `Promise` hell
+ - Use combinarors in `Promise` (e.g. `Promise.all`)
 
 ## Working with vscode
 
