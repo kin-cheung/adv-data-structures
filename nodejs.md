@@ -31,7 +31,7 @@ flowchart LR;
 ```
 ## Performance enchancement
  - Node clustering
-  - NodeJS cluster manager using `Cluster.fork()`
-  - pm2 (no code change required)
-  - k8s
+   - Cluster manager using `Cluster.fork()`
+   - pm2 (a command line tool; no code change required)
+   - k8s
  - Worker threads
