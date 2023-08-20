@@ -29,3 +29,9 @@ flowchart LR;
   binding --> libuv
   binding --> cpp_addons
 ```
+## Performance enchancement
+ - Node clustering
+  - NodeJS cluster manager using `Cluster.fork()`
+  - pm2 (no code change required)
+  - k8s
+ - Worker threads
