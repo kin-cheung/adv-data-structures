@@ -11,7 +11,11 @@
  - Two event queues for two types of tasks, microtasks and macrotasks
  - Microtasks take priority over macrotasks
  - Microtasks include `Promise.then()` and `process.nextTick()`
- - Macrotasks include `setTimeout()`, I/O callbacks, etc.
+  - 1 tick includes checking 3 things:
+    1) `setInterval` callbacks
+    2) callbacks for async OS tasks (e.g. http)
+    3) callbacks for threal pool tasks (e.g. fs, crypto (OS specific))
+   - Macrotasks include `setTimeout()`, I/O callbacks, etc.
 ## Architecture
 ```mermaid
 flowchart LR;
