@@ -41,6 +41,7 @@
  - Call stack + Call back queue + Microtask queue (Promise callbacks) + Event loop
   -   Microtask queue takes priority
  - Babel does not polyfill anymore and need to rely on `core-js/stable` (the rest) and `regenerator-runtime/runtime` (async functions)
+ - `!!` falsey checks and `??` `undefined` checks, e.g. `const c = nullableVar ?? 'na';`
 
 ## Clean code
  - Don't use `var`
