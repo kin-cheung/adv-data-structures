@@ -5,7 +5,14 @@
  - libuv is a C++ library that provide OS access
    - Event Loop, Thread Pool, Async IO
  - nodejs connects JS and C++ using `process.binding()`, e.g. PBKDF2
-### Architecture
+## Event Loop
+ - it is provided by libuv, **not** V8
+### Microtask queue vs Marcotask queue
+ - two event queues for two types of tasks, microtasks and macrotasks
+ - microtasks take priority over macrotasks
+ - microtasks include `Promise.then()` and `process.nextTick()`
+ - macrotasks include `setTimeout()`, I/O callbacks, etc.
+## Architecture
 ```mermaid
 flowchart LR;
   your_js["JS we write"]
