@@ -6,4 +6,5 @@
 
 ## Programming lanaguages (and runtime :wink:)
 - [Javascript](/javascript.md)
+- [Typescript](/typescript.md)
 - [NodeJS](/nodejs.md)
