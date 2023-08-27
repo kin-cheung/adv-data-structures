@@ -41,4 +41,4 @@
 ### Others
  - protected
  - abstact classes
- - [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped) 
+ - [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped) contains @types commonly used declaration files
