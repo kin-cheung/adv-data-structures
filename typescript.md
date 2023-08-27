@@ -41,3 +41,4 @@
 ### Others
  - protected
  - abstact classes
+ - [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped) 
