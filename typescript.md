@@ -38,7 +38,13 @@
   }
 ```
 
+### webpack
+ - webpack-dev-server is like nodemon
+ - enable source map during development
+ - clean-webpack-plugin - [contenthash].bundle.js is commonly used to generate a unique bundle for each build but it also creates a new bundle file everytime you build. `clean-webpack-plugin` is used to clean up the `/dist` folder before each build
+
 ### Others
  - protected
  - abstact classes
+ - `import type` for Babel to safely assume the type can be removed in javascript code
  - [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped) contains @types commonly used declaration files
