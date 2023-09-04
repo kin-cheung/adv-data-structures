@@ -1,5 +1,18 @@
 # System Design
 
+## Requirements gathering
+### 1. Functional requirements
+ - Identify actors, user cases and user flows 
+### 2. Non-functional requirements
+ - measurable and testable
+ - tradeoffs and feasibility
+ - no one single architecture can serve all quality requirements
+### 3. Limitations and boundaries
+ - can make design simpler
+ - technical (programming languages), business (budget), regulatory/legal constraints
+   - be aware of self-imposed constraints that can be removed or avoided
+ - Loosely couple current constraints or dependencies
+
 ## General considerations
  - performance - single host, multi-threaded, distributed, multi-region, edge computing, CDN, caching
  - availability - load balancing, replication, master/slave, election
