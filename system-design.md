@@ -13,7 +13,9 @@
  - Loosely couple current constraints or dependencies
 
 ## General considerations
- - performance - single host, multi-threaded, distributed, multi-region, edge computing, CDN, caching, percentile distribution
+ - performance - single host, multi-threaded, distributed, multi-region, edge computing, CDN, caching
+   - percentile distribution
+   - degradation point (latency vs throughout)
  - availability - load balancing, replication, master/slave, election
  - consistency - sync/async
  - monitoring - core feature monitoring, algorithem efficiency
