@@ -8,7 +8,6 @@
  - tradeoffs and feasibility
  - no one single architecture can serve all quality requirements
 ### 3. Limitations and boundaries
- - can make design simpler
  - technical (programming languages), business (budget), regulatory/legal constraints
    - be aware of self-imposed constraints that can be removed or avoided
  - Loosely couple current constraints or dependencies
