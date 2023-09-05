@@ -14,11 +14,24 @@
 
 ## General considerations
  - performance - single host, multi-threaded, distributed, multi-region, edge computing, CDN, caching
-   - percentile distribution
+   - percentile distribution (measurability)
    - degradation point (latency vs throughout)
  - availability - load balancing, replication, master/slave, election
  - consistency - sync/async
  - monitoring - core feature monitoring, algorithem efficiency
+ - scalability - vertical, horizontal and team scalability
+ - fault tolerance - can be resolved by:
+   1) failure prevention - eliminate single point of failure through replication and redundancy 
+   2) failure detection and isolation - health monitoring
+   3) recovery - stop traffic, restart, rollback
+ - SLA (business and legal), SLOs and SLIs (engineers defined and users most care about)
+ - recovery plan - 1) alerts 2) auto failovers/restarts/rollbacks/auto scaling and 3) predefined handbooks
+
+## Big Data Architecture
+ - Lambda architecture - combining batch-processing and real-time processing to serve different user queries
+  - batch layer - use batch jobs to produce batch views
+  - speed layer - use data streaming to produce real-time analysis
+  - serve layer - base on user queries, it gets data from batch views or real-time views or the combination of the two
 
 ## Rate limiter
 ### Considerations
