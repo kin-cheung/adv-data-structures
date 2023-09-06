@@ -33,6 +33,13 @@
   - speed layer - use data streaming to produce real-time analysis
   - serve layer - base on user queries, it gets data from batch views or real-time views or the combination of the two
 
+## Case studies
+ - Microservices Architecture for organizational scalability
+ - CQRS to separate a write-intensive (admin portal) CP database from read-intensive AP database (millions of users)
+ - NoSQL/Text search engine for product catalog search
+ - Event sourcing using massage broker (and possibly listen to yourself pattern) for failure discovery and auditing
+ - Lambda architecture to provide real-time click stream and UI event data and batch processed historic and projected data 
+
 ## Rate limiter
 ### Considerations
  - client side or server side
