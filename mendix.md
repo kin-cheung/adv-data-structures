@@ -8,7 +8,7 @@ This page contains personal opinions of Menfix after spending some time with the
    - WYSIWYG design editor
    - refactoring capability across all component types
  - various levels of access controls configurable through IDE (module, page, field, entity, data (XPATH) level) using RBAC
- - PAAS for demo and testing purposes with single-click deployments from IDE (via "publish")
+ - PAAS for demo and testing purposes with single-click deployments from IDE (via "publish") e.g. https://demo-app401-sandbox.mxapps.io/
 
 ## Weaknesses
  - monolith by design (frontend and backend are lightly coupled)
